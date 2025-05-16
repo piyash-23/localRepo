@@ -6,3 +6,14 @@ const profile = {
 };
 console.log(profile)
 console.log(typeof profile);
+
+// class 2 starts here
+// learning operators 
+
+let a = 9;
+let b=4;
+console.log("a+b =", a + b);
+console.log("a-b =", a - b);
+console.log("a*b =", a * b);
+console.log("a/b =", a / b);
+console.log("The modulus of","a&b =", a % b);
