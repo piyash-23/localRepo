@@ -30,3 +30,13 @@ console.log("a to the power of b will be", a**b);
     console.log(a /= 4);
     console.log(a *= 4);
 }
+// logical operators
+{
+    let a = 5;
+    let b = 6;
+    let cond1 = a != 6;
+    let cond2 = b>a ;
+    console.log(cond1 && cond2); // both have to be true
+    console.log(a<6 || b<a); //true; one true one false
+    console.log(a>6 || b<a); //false; both false
+}
