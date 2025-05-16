@@ -66,3 +66,4 @@ else{
     console.log("you are not eligible")
 };
 
+// ternary operator. uses ? and : . example a ? b:c
