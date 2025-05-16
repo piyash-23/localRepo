@@ -52,3 +52,17 @@ console.log("a to the power of b will be", a**b);
         console.log("you can not go")
     }
 }
+// function in object
+const tumi = {
+    fName: "Piyash",
+    age: "21",
+    class: "University",
+    inst: "KU",
+};
+if(tumi.age > 25 ) {
+    console.log("your are eligible")
+}
+else{
+    console.log("you are not eligible")
+};
+
