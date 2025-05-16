@@ -40,3 +40,15 @@ console.log("a to the power of b will be", a**b);
     console.log(a<6 || b<a); //true; one true one false
     console.log(a>6 || b<a); //false; both false
 }
+{
+    let age = 25;
+    if(age >= 18){
+        console.log("you can go")
+    }
+    else if(age <= 27){
+        console.log("you need a license")
+    }
+    else {
+        console.log("you can not go")
+    }
+}
