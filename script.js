@@ -81,3 +81,47 @@ if(word%5 === 0){
     console.log("This is not a multiple of 5")
 };
 */
+
+// ============================solving practice 2============================
+/*
+let score = prompt("enter your marks:");
+if(80>= score <=100){
+    console.log(score, "You got grade A")
+} 
+else if( 70>= score <= 79){
+    console.log(score, "You got grade B")
+}
+else if( 60>= score <= 69){
+    console.log(score, "You got grade C")
+}
+else if( 50>= score <= 59){
+    console.log(score, "You got grade D")
+}
+else {
+    console.log("Ops! You are failed")
+};
+*/
+
+// this is wrong. cause we can't put comparison in js like math. We need to use && operator
+/*
+let score;
+score = prompt("Enter your score");
+if(score >= 80 && score<= 100){
+    console.log("Congratulations! You got A")
+}
+else if(score >=70 && score <= 79){
+    console.log("You got B")
+}
+else if(score >=60 && score <= 69){
+    console.log("You got C")
+}
+else if(score >=50 && score <= 59){
+    console.log("You got D")
+}
+else{
+    console.log("Sorry. You are failed")
+};
+
+// it's working now. The right process.
+
+*/
