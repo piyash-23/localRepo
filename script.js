@@ -1,3 +1,4 @@
+/* 
 const profile = {
     pName: "Shradha Khapra",
     posts: 195,
@@ -66,4 +67,17 @@ else{
     console.log("you are not eligible")
 };
 
-// ternary operator. uses ? and : . example a ? b:c
+// ternary operator. uses ? and : . example a ? b:c 
+// ternary not used often
+*/
+
+// ====================prompt use: practice no.1======================
+/*
+let word = prompt("Enter a Number");
+
+if(word%5 === 0){
+    console.log("The number is multiple of 5")
+} else{
+    console.log("This is not a multiple of 5")
+};
+*/
