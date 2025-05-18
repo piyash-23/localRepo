@@ -192,3 +192,24 @@ while(userNum != gameNum);
 // done
 
 */
+// ===================================class 4(arrays)==================================
+/*
+let y =["Mahim", "Mahin", "Sakib", "Sabbir", "Lamim", "Juwel"];
+console.log(y[2]);
+*/
+// ============================loop of array==========================
+/*
+let frnds =["Mahim", "Mahin", "Sakib", "Sabbir", "Lamim", "Juwel"];
+for(let i=0; i<frnds.length; i++){
+    console.log(frnds[i]);
+}
+// ========================== array er jonno vuleo <= deya jabe na. shudhu < dite hobe. naile pukki mara
+*/
+
+let mark = [85, 97, 44, 37, 76, 60];
+let sum =0;
+for (let i=0; i<mark.length; i++){
+    sum += mark[i];
+}
+let avg = sum / mark.length;
+console.log(`the average mark of the class is ${avg}`);
