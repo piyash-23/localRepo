@@ -127,7 +127,16 @@ else{
 */
 
 // ======================================= Lecture 3 ====================================
-
+/*
 for(let i=1; i <=20; i+=2){
     console.log("Print")
 }
+    */
+//  ================================================while loop=================================
+// while loop er jonno shurute condition define korte hobe erpore {} er vitor work likhte hobe
+
+let i = 1;
+while( i<=10 ){
+    i++ ;
+    console.log("i =", i);
+} // i er value browser 11 show korbe karon i 10 er por 11 run kore erpore statement check kore dkhe thamte hobe.
