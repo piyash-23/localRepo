@@ -215,6 +215,7 @@ let avg = sum / mark.length;
 console.log(`the average mark of the class is ${avg}`);
 */
 // ===================================practice 2 class 4=========================
+/*
 let price = [250, 645, 300, 900, 50];
 let offer= 0;
 let op= 0;
@@ -229,3 +230,13 @@ do{
     console.log(`price after offer op ${op}`);
 }
 while(idx < price.length -1);
+*/
+
+let comp = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+console.log(comp);
+let delcomp = comp.shift();
+console.log(delcomp);
+let addcomp = comp.splice(2, 1, "Ola");
+console.log(addcomp);
+let amacomp = comp.push("Amazon");
+console.log(amacomp);
