@@ -205,7 +205,7 @@ for(let i=0; i<frnds.length; i++){
 }
 // ========================== array er jonno vuleo <= deya jabe na. shudhu < dite hobe. naile pukki mara
 */
-
+/*
 let mark = [85, 97, 44, 37, 76, 60];
 let sum =0;
 for (let i=0; i<mark.length; i++){
@@ -213,3 +213,19 @@ for (let i=0; i<mark.length; i++){
 }
 let avg = sum / mark.length;
 console.log(`the average mark of the class is ${avg}`);
+*/
+// ===================================practice 2 class 4=========================
+let price = [250, 645, 300, 900, 50];
+let offer= 0;
+let op= 0;
+for (let i=0; i < price.length ; i++){
+    offer = price[i] - price[i]/10;
+    console.log(`price after offer if ${offer}`);
+}
+let idx=-1;
+do{
+    idx++;
+    op = price[idx]- price[idx]*0.1;
+    console.log(`price after offer op ${op}`);
+}
+while(idx < price.length -1);
