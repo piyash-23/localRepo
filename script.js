@@ -142,7 +142,7 @@ while( i<=10 ){
 } // i er value browser 11 show korbe karon i 10 er por 11 run kore erpore statement check kore dkhe thamte hobe.
 */
 // =================================== do while loop =============================
-
+/*
 let i=20;
 do{
     i++;
@@ -154,3 +154,41 @@ while( i<= 10){
     i++;
     console.log("i=", i); // ekhane kichu show kore nai karon agei condition dekhe niche
 }
+
+*/
+
+// ============================practice 1================================
+// for(let i=1; i<=100; i++){
+//     console.log("i =", i)
+// }
+/*
+let i=0;
+while(i<=100){
+    i++;
+    if(i%2 === 0){
+        console.log("even i=", i);
+    }
+}
+    */
+//    ==================================do while practice===================
+/*
+let i=0;
+do{
+    i++
+    if(i%2 ===0){
+        console.log("even i", i);
+    }
+}
+while(i<=100);
+*/
+/*
+// ===============================practice 2=================================
+let gameNum = 10;
+let userNum = prompt("Enter the number to enter your site");
+do{
+    userNum = prompt("Sorry, you entered the wrong num. Enter again");
+}
+while(userNum != gameNum); 
+// done
+
+*/
