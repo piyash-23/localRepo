@@ -231,7 +231,7 @@ do{
 }
 while(idx < price.length -1);
 */
-
+/*
 let comp = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 console.log(comp);
 let delcomp = comp.shift();
@@ -240,3 +240,12 @@ let addcomp = comp.splice(2, 1, "Ola");
 console.log(addcomp);
 let amacomp = comp.push("Amazon");
 console.log(amacomp);
+*/
+
+// ====================================class 5 everything about function=====================
+
+function myFunc(){
+    console.log(`hello there babe`);
+    console.log(`welcome to my first function`);
+}
+myFunc();
