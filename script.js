@@ -243,9 +243,99 @@ console.log(amacomp);
 */
 
 // ====================================class 5 everything about function=====================
-
+/*
 function myFunc(){
     console.log(`hello there babe`);
     console.log(`welcome to my first function`);
 }
-myFunc();
+myFunc(); 
+function sum(a,b){
+    console.log(a + b);
+    return 0;
+}
+sum(5,6);
+
+*/
+
+// ==============================================arrow function==================
+/*
+function countVowels(str){
+    let count=0;
+    for(const char of str){
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+            count++;
+        }
+    }
+    console.log(count);
+}
+
+// ====================using arrow function================================
+const countVow = (str)=> {
+    let count=0;
+    for(const char of str){
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+            count++;
+        }
+    }
+    console.log(count);
+}
+
+*/
+
+// ======================for each function==================================
+/*
+let nums = [50, 60, 89, 41, 63];
+
+nums.forEach((num) => {
+    console.log(num * num);
+})
+
+let newArray = nums.map((maparr) => {
+    console.log(maparr * maparr);
+    return maparr;
+})
+    */ 
+
+//------------------------------------ filter method--------------------------
+/*
+let even = [10, 16, 18, 90, 60, 35, 29];
+
+let neweven = even.filter((num)=>{
+    if(num % 2 ===0){
+        console.log(num);
+    } else if(num % 2 != 0){
+        console.log(`${num}is odd numbers`);
+    }
+})
+
+*/
+// ----------------------------practice ------------------------------
+/*
+let marks = [87, 93, 64, 99, 86, 91, 90];
+
+let showM = marks.filter((show)=> {
+    if(show > 90){
+        console.log(`${show} is a 90 up number`);
+    } else if(show <= 90){
+        console.log(`${show} not 90 up number`);
+    }
+    return 0;
+})
+    */
+// ------------------------practice 2 ----------------------------------
+/*
+let usernum = prompt(`Enter a number`);
+let arrayNum =[];
+for(let i=1; i<= usernum; i++){
+    arrayNum[i-1] = i;
+}
+console.log(arrayNum);
+let sum = arrayNum.reduce((initial, final) => {
+    return initial + final;
+})
+console.log(sum);
+let factorial = arrayNum.reduce((initial, final)=>{
+    return initial * final;
+})
+console.log(factorial);
+*/
