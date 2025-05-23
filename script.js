@@ -339,3 +339,87 @@ let factorial = arrayNum.reduce((initial, final)=>{
 })
 console.log(factorial);
 */
+
+// evnet practice==========================
+/*
+let popup = document.querySelector(".popup");
+let pop =  document.querySelector(".pop");
+let  show = "none";
+popup.addEventListener("mouseover", () =>{
+    if(show === "none"){
+        show = "showed";
+        pop.classList.add("show");
+    } else {
+        show = "none";
+        pop.classList.remove("show");
+    }
+    console.log(show);
+});
+*/
+
+// =====================tic tac toe game=======================
+let boxes = document.querySelectorAll(".box");
+let reset = document.querySelector("#reset");
+let newGame = document.querySelector("#new-game");
+let turnO = true;
+let win = document.querySelector(".win");
+const winNumber = [
+    [0, 1, 2],
+    [0, 3, 6],
+    [0, 4, 8],
+    [3, 4, 5],
+    [6, 7, 8],
+    [1, 4, 7],
+    [2, 5, 8],
+    [2, 4, 6],
+];
+const enableBoxes = () => {
+        for (let box of boxes){
+            box.disabled = false;
+            box.innerText = "";
+            win.classList.add("hide");
+        }
+    }
+const resetGame = () => {
+    turnO= true;
+    enableBoxes();
+}
+newGame.addEventListener("click", resetGame);
+reset.addEventListener("click", resetGame);
+boxes.forEach((box) => {
+    box.addEventListener("click", () =>{
+        console.log("box clicked");
+        if(turnO) {
+            box.innerText = "O";
+            turnO = false;
+        } else {
+            box.innerText = "X"
+            turnO = true;
+        }
+        box.disabled = true;
+        checkWinner();
+    });
+    const disableBoxes = () => {
+        for (let box of boxes){
+            box.disabled = true;
+        }
+    }
+    const showWinner= (winner) => {
+        win.innerText = `Congratulations! winner is ${winner}`;
+        win.classList.remove("hide");
+        disableBoxes();
+    }
+    const checkWinner = () => {
+    for(let pattern of winNumber){
+            let pos1val = boxes[pattern[0]].innerText;
+            let pos2val = boxes[pattern[1]].innerText;
+            let pos3val = boxes[pattern[2]].innerText;
+            if(pos1val != "" && pos2val != "" && pos3val != ""){
+                if(pos1val === pos2val && pos2val === pos3val){
+                    console.log(`"winner" ${pos1val}`);
+                    showWinner(pos1val);
+                }
+            }
+        }
+    }
+});
