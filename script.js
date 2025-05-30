@@ -436,3 +436,6 @@ let car = {
     }
 };
 */
+
+let name = "arafat";
+console.log(name)
