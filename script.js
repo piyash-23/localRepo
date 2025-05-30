@@ -356,7 +356,7 @@ popup.addEventListener("mouseover", () =>{
     console.log(show);
 });
 */
-
+/*
 // =====================tic tac toe game=======================
 let boxes = document.querySelectorAll(".box");
 let reset = document.querySelector("#reset");
@@ -423,3 +423,16 @@ boxes.forEach((box) => {
         }
     }
 });
+*/ 
+
+// ===================================classes and objects============================================
+/*
+let car = {
+    fullName : "volvo",
+    engine: "1600cc",
+    model: "h2hdbi",
+    power : function() {
+        console.log("power of the car is = ", engine);
+    }
+};
+*/
