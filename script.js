@@ -294,7 +294,7 @@ let newArray = nums.map((maparr) => {
     console.log(maparr * maparr);
     return maparr;
 })
-    */ 
+    */
 
 //------------------------------------ filter method--------------------------
 /*
@@ -423,7 +423,7 @@ boxes.forEach((box) => {
         }
     }
 });
-*/ 
+*/
 
 // ===================================classes and objects============================================
 /*
@@ -436,6 +436,130 @@ let car = {
     }
 };
 */
+/*
+let salary = prompt("Enter your salary amount");
+let tax = 0.1;
+let afterTax = salary - (salary*tax);
+let expenses = prompt("Enter your monthly expenses:");
+let afterExpense = afterTax - expenses;
+let savings = afterExpense * 0.2;
+console.log(afterTax);
+console.log(afterExpense);
+console.log(savings);
 
-let name = "arafat";
-console.log(name)
+if(savings >= 1000){
+    console.log(`Excellent`);
+}
+else if (savings >= 500 && savings < 1000){
+    console.log(`Good`);
+}
+else if(savings >= 100 && savings <500){
+    console.log(`Needs improvement`);
+}
+else {
+    console.log(`Critical`);
+}
+    */
+
+// let digit = prompt("Enter a digit:");
+/*
+if(digit == "0"){
+    console.log("zero");
+}
+else if(digit == "1"){
+    console.log("one");
+}
+else if(digit == '2'){
+    console.log("two");
+}
+else if(digit == "3"){
+    console.log("three");
+}
+else if(digit == "4"){
+    console.log("four");
+}
+else if(digit == "5"){
+    console.log("five");
+}
+else if(digit == '6'){
+    console.log("six");
+}
+else if(digit == "7"){
+    console.log("seven");
+}
+else if(digit == "8"){
+    console.log("eight");
+}
+else if(digit == "9"){
+    console.log("nine");
+}
+else{
+    console.log("Not a digit");
+}
+    */
+/*
+let vow = prompt("Enter a character")
+vow = vow.toLowerCase();
+switch(vow){
+        case "a" : console.log("vowel");
+    break
+        case "e" : console.log("vowel");
+    break
+        case "i" : console.log("vowel");
+    break
+        case "o" : console.log("vowel");
+    break
+        case "u" : console.log("vowel");
+    break
+        default : console.log("Consonant");
+}
+*/
+/*
+let sum = 0;
+for(var x = 0; x<=10 ; x++){
+    sum = sum + x;
+}
+console.log(sum);
+*/
+/*
+function myF(birthYear){
+    let age = 2025 - birthYear;
+    return age;
+}
+let ageNow = myF(2004);
+console.log(ageNow);
+*/
+/*
+function cutFruits(fruits){
+    return fruits *4;
+}
+function juiceWithFruits(apple, orange){
+    const Apple = cutFruits(apple);
+    const Orange = cutFruits(orange);
+    const juice = `This juice is made from ${Apple} apple pieces and ${Orange} orange pieces`;
+    return juice;
+}
+
+const juiceLog = juiceWithFruits(2, 5);
+console.log(juiceLog);
+*/
+/*
+function newJuice(food) {
+  return food * 3;
+}
+function cutFood(mango, banana) {
+  const Mango = newJuice(mango);
+  const Banana = newJuice(banana);
+  let juice = `This food is made from a total of ${Mango} pieces of mangoes and ${Banana} pieces of banana`;
+  return juice;
+}
+let ourJuice = cutFood(3, 6);
+console.log(ourJuice);
+*/
+
+let guess = document.querySelector(".guessNum");
+let submit = document.querySelector(".submit");
+
+submit.addEventListener("click", () => {
+  console.log(guess.value);
+});
