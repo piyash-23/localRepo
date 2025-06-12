@@ -556,10 +556,22 @@ function cutFood(mango, banana) {
 let ourJuice = cutFood(3, 6);
 console.log(ourJuice);
 */
-
+/*
 let guess = document.querySelector(".guessNum");
 let submit = document.querySelector(".submit");
 
 submit.addEventListener("click", () => {
   console.log(guess.value);
 });
+*/
+/*
+let arr = [2, 3, 4];
+let badNewArr = [1, 8, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+let goodArr = [1, 8, ...arr];
+console.log(goodArr);
+console.log(...arr);
+console.log(...badNewArr);
+console.log(...goodArr);
+*/
+//  ===================================closer look at the functins=============
