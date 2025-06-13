@@ -575,3 +575,73 @@ console.log(...badNewArr);
 console.log(...goodArr);
 */
 //  ===================================closer look at the functins=============
+//    lesson 1
+/*
+const bookings = [];
+
+const createBooking = function (
+  flightNum,
+  numPassangers = 1,
+  price = 300 * numPassangers
+) {
+  // ES5 method of doing this. we give the value in the parameter itself
+  //   numPassangers ||= 1;
+  //   price ||= 300;
+
+  const booking = {
+    flightNum,
+    numPassangers,
+    price,
+  };
+  console.log(booking);
+  bookings.push(booking);
+};
+createBooking("LH123");
+createBooking("LH123", 10);
+createBooking("dsh552", undefined, 5000);
+*/
+
+//  ===================lesson 2 =====================
+/*
+const flight = "LH123";
+const passangerIn = {
+  name: "Arafat",
+  passport: 41632465345,
+};
+
+const checkIn = function (flightNum, passanger) {
+  flightNum = "LH894";
+  passanger.name = "Mr." + passanger.name;
+  if (passanger.passport === 41632465345) {
+    alert("Checked In");
+  } else {
+    alert("wrong passport" );
+  }
+};
+checkIn(flight, passangerIn);
+console.log(flight);
+console.log(passangerIn);
+*/
+
+// ==================== callback functions ==========================
+/*
+const oneWord = function (str) {
+  return str.replace(/ /g, "").toLowerCase();
+};
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(" ");
+  return [first.toUpperCase(), ...others].join(" ");
+};
+
+// higher functions
+const transformer = function (str, fn) {
+  console.log(`Original String: ${str}`);
+  console.log(`Transformed string: ${fn(str)}`);
+  console.log(`Transformed by: ${fn.name}`);
+};
+
+transformer("Javascript is the best", upperFirstWord);
+transformer("Javascript is the best", oneWord);
+*/
+
+// ================== functions returning functins ====================
