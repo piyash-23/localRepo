@@ -658,7 +658,7 @@ greetHey("Piyash");
 greet("Ohe")("Toilakto Shishu");
 */
 // ========================= function call and apply methods=================
-
+/*
 const balaka = {
   airline: "Biman Balaka",
   iataCode: "LH",
@@ -698,3 +698,16 @@ let flightData = [254, "Shahida AKter"];
 book.apply(usBangla, flightData);
 console.log(usBangla);
 // =========================== BIND METHOD ===================
+// bind ke alada variable er vitore rakhte hoy ar okhan ei jinis abar notun function hisebe kaj kore
+const bookUs = book.bind(usBangla);
+bookUs(52, "Nicholas");
+const bookNovo = book.bind(novoAir);
+bookNovo(245, "Ahmed Pasha");
+console.log(novoAir);
+
+// going further with the bind method
+const book23 = book.bind(usBangla, 23);
+book23("Turgut Ghazi");
+book23("Nurettin");
+console.log(usBangla);
+*/
