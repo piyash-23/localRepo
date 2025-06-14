@@ -645,3 +645,56 @@ transformer("Javascript is the best", oneWord);
 */
 
 // ================== functions returning functins ====================
+/*
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greetHey = greet("Hey");
+greetHey("Arafat");
+greetHey("Piyash");
+greet("Ohe")("Toilakto Shishu");
+*/
+// ========================= function call and apply methods=================
+
+const balaka = {
+  airline: "Biman Balaka",
+  iataCode: "LH",
+  bookings: [],
+
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode} ${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode} ${flightNum}`, name });
+  },
+};
+balaka.book(245, "Arafat Ahmed");
+balaka.book(56, "Hafsa Nury");
+console.log(balaka);
+
+let novoAir = {
+  name: "NovoAir",
+  iataCode: "NV",
+  bookings: [],
+};
+
+const book = balaka.book;
+// book(23, "Arafat"); ===> this will not work. cause it has this keyword
+// ei func re kaj koraite ekhn age amader call use korte hobe
+book.call(novoAir, 52, "Hafsa Nury");
+console.log(novoAir);
+// =================== the apply method ================
+let usBangla = {
+  airline: "US-Bangla",
+  iataCode: "UB",
+  bookings: [],
+};
+
+let flightData = [254, "Shahida AKter"];
+
+book.apply(usBangla, flightData);
+console.log(usBangla);
+// =========================== BIND METHOD ===================
